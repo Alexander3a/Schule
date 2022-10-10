@@ -1,6 +1,7 @@
 package de.alex.Studium.first;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
 
 //Author Alexander Riedel
@@ -11,11 +12,18 @@ public class A6IntSums {
     }
     public static void do_stuff(Integer[] to){
         if(to[0]==0)return;
-        to[0]--;
+
         ArrayList<Integer> list = new ArrayList<>();
-        fill_with_ints(list,5);
+        if(1==1){
+            fill_with_ints(list,5);
+        }else{
+            if((to[0]%3)==0) Collections.addAll(list, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29);
+            if((to[0]%3)==2) Collections.addAll(list, 3, 5, 11, 17, 31, 41, 59, 67, 83, 109);
+            if((to[0]%3)==1) Collections.addAll(list, 5, 11, 31, 59, 127, 179, 277, 331, 431, 599);
+        }
         int alles= alles_zusammen(list);
         System.out.println(alles);
+        to[0]--;
         do_stuff(to);
     }
     public static int alles_zusammen(ArrayList<Integer> ints){
