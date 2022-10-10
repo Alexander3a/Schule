@@ -3,6 +3,7 @@ package de.alex.Studium.first;
 import java.util.ArrayList;
 import java.util.Random;
 
+//Author Alexander Riedel
 import static de.alex.Studium.first.globals.*;
 public class A7VorstellungEinzeilig {
     public static void main(String[] args) {

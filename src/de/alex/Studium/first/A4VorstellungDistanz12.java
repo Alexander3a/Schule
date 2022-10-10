@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import static de.alex.Studium.first.globals.namen;
 
+//Author Alexander Riedel
 public class A4VorstellungDistanz12 {
     public static void main(String[] args) {
         ArrayList<String> tnamen = new ArrayList<>(namen);

@@ -3,6 +3,7 @@ package de.alex.Studium.first;
 import java.util.ArrayList;
 import java.util.Random;
 
+//Author Alexander Riedel
 public class A6IntSums {
     public static void main(String[] args) {
         do_stuff(new Integer[]{3});
