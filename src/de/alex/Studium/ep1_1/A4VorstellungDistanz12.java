@@ -11,7 +11,7 @@ public class A4VorstellungDistanz12 {
         print_next(tnamen);
     }
     private static int alt = 0;
-    public static String fuck_up_string(String in){
+    public static String swp_string(String in){
         alt++;
         switch (alt%2){
             case 0:
@@ -30,6 +30,6 @@ public class A4VorstellungDistanz12 {
         }
     }
     public static String process_char(String in){
-        return in.length()==0 ? "" :  fuck_up_string(in.charAt(0)+"")+""+ process_char(in.substring(1));
+        return in.length()==0 ? "" :  swp_string(in.charAt(0)+"")+""+ process_char(in.substring(1));
     }
 }

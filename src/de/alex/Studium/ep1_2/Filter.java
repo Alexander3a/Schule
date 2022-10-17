@@ -17,8 +17,8 @@ public class Filter {
                     for (int j = 0; j < key_split.length-1; j++) {
                         String befor = key_split[j];
                         String after = key_split[j+1];
-                        befor= move_len(i, befor);
-                        after= move_len(i, after);
+                        befor= move_len(size, befor);
+                        after= move_len(size, after);
                         System.out.println(befor+keyword+after);
                     }
                 }else{

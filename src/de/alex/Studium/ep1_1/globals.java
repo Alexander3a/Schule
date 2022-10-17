@@ -1,8 +1,5 @@
 package de.alex.Studium.ep1_1;
 
-import de.alex.Studium.UrlInterface;
-
-import javax.net.ssl.HttpsURLConnection;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -30,14 +27,6 @@ public class globals {
             }
             URL url = new URL( https?"https":"http",host,Integer.parseInt(port),https ? urlString.replace("http://"+org_host,"") : urlString.replace("https://"+org_host,""));
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-//            if(https){
-//                HttpsURLConnection httpscon = (HttpsURLConnection)url.openConnection();
-//                connection=(UrlInterface) httpscon;
-//            }else{
-//                HttpURLConnection httpcon = (HttpURLConnection)url.openConnection();
-//                connection=(UrlInterface) httpcon;
-//            }
-
             connection.setRequestProperty("User-Agent"," Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.82 Safari/537.36");
             if(property!=null){
                 HttpURLConnection finalConnection = connection;
