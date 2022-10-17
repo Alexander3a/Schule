@@ -18,6 +18,7 @@ public class globals {
             Boolean https = null;
             if(urlString.startsWith("http://"))https=false;
             if(urlString.startsWith("https://"))https=true;
+            if(https==null)return "";
             String host = !https ? urlString.split("http://")[1].split("/")[0] : urlString.split("https://")[1].split("/")[0];
             String port =https ? "443": "80";
             String org_host=host;

@@ -1,13 +1,25 @@
 package de.alex.Studium.ep1_2;
 
+import javax.swing.*;
 import java.util.List;
 
 import static de.alex.Studium.ep1_1.globals.getFromURL;
 
 public class Filter {
     public static void main(String[] args) {
-        List<String> source = List.of(getFromURL("https://www.whitehouse.gov/", null).split("\n"));
+        String url = JOptionPane.showInputDialog(null,"url");
+        List<String> source = null;
+        try {
+            source = List.of(getFromURL(url, null).split("\n"));
+            if(source.size()==1 && source.get(0).equals("")){
+                throw new Exception("");
+            }
+        }catch (Exception e){
+            JOptionPane.showMessageDialog(null,"invalid url");
+            return;
+        }
         String keyword = "Jill";
+        keyword= JOptionPane.showInputDialog(null,"keyword");
         for (int i = 0; i < source.size() ; i++) {
             String s = source.get(i);
             if(s.contains(keyword)){
