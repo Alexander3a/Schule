@@ -1,6 +1,7 @@
 ### IntelliJ IDEA ###
 out/
 .idea/
+abgabe/
 !**/src/**/out/
 
 ### Eclipse ###
