@@ -1,8 +1,8 @@
-package de.alex.Studium.first;
+package de.alex.Studium.ep1_1;
 
 import java.util.ArrayList;
 
-import static de.alex.Studium.first.globals.namen;
+import static de.alex.Studium.ep1_1.globals.namen;
 
 //Author Alexander Riedel
 public class A5Zip {

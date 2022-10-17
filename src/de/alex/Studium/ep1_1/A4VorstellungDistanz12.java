@@ -1,13 +1,11 @@
-package de.alex.Studium.first;
-
-
-//Author Alexander Riedel
+package de.alex.Studium.ep1_1;
 
 import java.util.ArrayList;
 
-import static de.alex.Studium.first.globals.namen;
+import static de.alex.Studium.ep1_1.globals.namen;
 
-public class A2VorstellungAufAb {
+//Author Alexander Riedel
+public class A4VorstellungDistanz12 {
     public static void main(String[] args) {
         ArrayList<String> tnamen = new ArrayList<>(namen);
         print_next(tnamen);
@@ -17,9 +15,9 @@ public class A2VorstellungAufAb {
         alt++;
         switch (alt%2){
             case 0:
-                return in.toUpperCase();
+                return in+" ";
             case 1:
-                return in.toLowerCase();
+                return in+"  ";
             default:
                 return "there is a glitch in the matrix";
         }

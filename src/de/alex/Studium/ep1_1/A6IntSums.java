@@ -1,4 +1,4 @@
-package de.alex.Studium.first;
+package de.alex.Studium.ep1_1;
 
 import java.util.ArrayList;
 import java.util.Collections;

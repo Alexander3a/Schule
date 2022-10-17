@@ -30,7 +30,6 @@ public class Program1 {
 //        System.out.println(Arrays.toString(make_bytes(255)));
     }
     public static void test(String ... elem){
-
     }
     public static String invert(String in){
         StringBuilder a = new StringBuilder(in.length());

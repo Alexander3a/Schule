@@ -1,11 +1,13 @@
-package de.alex.Studium.first;
+package de.alex.Studium.ep1_1;
+
+
+//Author Alexander Riedel
 
 import java.util.ArrayList;
 
-import static de.alex.Studium.first.globals.namen;
+import static de.alex.Studium.ep1_1.globals.namen;
 
-//Author Alexander Riedel
-public class A4VorstellungDistanz12 {
+public class A2VorstellungAufAb {
     public static void main(String[] args) {
         ArrayList<String> tnamen = new ArrayList<>(namen);
         print_next(tnamen);
@@ -15,9 +17,9 @@ public class A4VorstellungDistanz12 {
         alt++;
         switch (alt%2){
             case 0:
-                return in+" ";
+                return in.toUpperCase();
             case 1:
-                return in+"  ";
+                return in.toLowerCase();
             default:
                 return "there is a glitch in the matrix";
         }

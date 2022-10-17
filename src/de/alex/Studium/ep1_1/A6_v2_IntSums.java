@@ -1,8 +1,7 @@
-package de.alex.Studium.first;
+package de.alex.Studium.ep1_1;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Random;
 
 //Author Alexander Riedel
 public class A6_v2_IntSums {

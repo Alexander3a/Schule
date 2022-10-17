@@ -1,10 +1,10 @@
-package de.alex.Studium.first;
+package de.alex.Studium.ep1_1;
 
 //Author Alexander Riedel
 
 import java.util.ArrayList;
 
-import static de.alex.Studium.first.globals.*;
+import static de.alex.Studium.ep1_1.globals.*;
 
 public class A1Vorstellung {
     public static void main(String[] args) {
