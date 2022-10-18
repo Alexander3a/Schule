@@ -4,7 +4,7 @@ package de.alex.Studium.ep1_1;
 
 import java.util.ArrayList;
 
-import static de.alex.Studium.ep1_1.globals.*;
+import static de.alex.Studium.Lib.*;
 
 public class A1Vorstellung {
     public static void main(String[] args) {

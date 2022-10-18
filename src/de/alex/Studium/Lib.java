@@ -1,4 +1,4 @@
-package de.alex.Studium.ep1_1;
+package de.alex.Studium;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -7,7 +7,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-public class globals {
+public class Lib {
     public static final ArrayList<String> namen = new ArrayList<>(List.of(new String[]{"Alexander", "anderer name"}));
     public static String invert_char(String in){
         return in.length()==0 ? "" :  in.charAt(in.length()-1)+""+invert_char(in.substring(0,in.length()-1));
@@ -26,7 +26,7 @@ public class globals {
                 port=host.split(":")[1];
                 host=host.split(":")[0];
             }
-            URL url = new URL( https?"https":"http",host,Integer.parseInt(port),https ? urlString.replace("http://"+org_host,"") : urlString.replace("https://"+org_host,""));
+            URL url = new URL( https?"https":"http",host,Integer.parseInt(port),!https ? urlString.replace("http://"+org_host,"") : urlString.replace("https://"+org_host,""));
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestProperty("User-Agent"," Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.82 Safari/537.36");
             if(property!=null){

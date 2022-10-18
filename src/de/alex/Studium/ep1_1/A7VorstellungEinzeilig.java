@@ -3,7 +3,7 @@ package de.alex.Studium.ep1_1;
 import java.util.Random;
 
 //Author Alexander Riedel
-import static de.alex.Studium.ep1_1.globals.*;
+import static de.alex.Studium.Lib.*;
 public class A7VorstellungEinzeilig {
     public static void main(String[] args) {
         do_stuff(new Integer[]{11});

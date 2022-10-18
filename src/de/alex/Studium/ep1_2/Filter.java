@@ -1,9 +1,13 @@
+/*
+ * Copyright (c) 2022. Alexander Riedel
+ */
+
 package de.alex.Studium.ep1_2;
 
 import javax.swing.*;
 import java.util.List;
 
-import static de.alex.Studium.ep1_1.globals.getFromURL;
+import static de.alex.Studium.Lib.getFromURL;
 
 public class Filter {
     public static void main(String[] args) {
